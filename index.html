@@ -10,29 +10,33 @@
 
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/normalize.css">
-
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'><!-- Import font -->
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'><!-- Import font-->
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
 
 <body>
+
+<!-- for something to be added later 
 <div class="aboveNav">
 	<div class="container">
 
 	</div>
-</div>
-
+</div> -->
+ 	
+ 	<!-- For all of the header content -->
 	<header>
 
-		<h2 class="title">graf nation</h2>
-
 		<div class="container">
-
+			
+			<h2 class="title">graf nation</h2>
+			
 			<nav>
 
 				<ul>
-
+					<li><a href="#">Gallery</a></li>
 					<li><a href="#">Gallery</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Blog</a></li>
@@ -47,90 +51,82 @@
 	</header>
 
 
+	<!-- large image at top of page : will contain slider  -->
 	<div class="hero">
 
 		<div class="slider">
 
 			<div class="slide">
-				
-				<div class="container">
-
-					<div class="row">
-					
-						<div class="col-12 text-centered">
-							<h1 class="slide-title">Hello</h1>
-						</div>
-					
-					</div>
-
-				</div>
-				<img src="images/tunnel.jpg">
+				<img src="images/tunnel.jpg" alt="tunnel"/>
 			</div>
 		</div>
 
 	</div>
 
-	<div class="container">
 
+	<!-- main page content -->
+	<div class="container" id="mainContent">
 
+		<!-- 1st row -->
 		<div class="row">
-						<div class="col-6 stag-cont">
 
-				<h2>Supplies</h2>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et risus volutpat lectus volutpat viverra. Duis ante sem, malesuada vitae felis vestibulum, accumsan luctus eros. Proin quis tristique nisl, id auctor nisi. Integer mattis arcu a ipsum fermentum condimentum. Etiam volutpat eget odio sed maximus. Vivamus a mi at quam vulputate interdum id sed velit. Donec ut mauris id diam fermentum malesuada. Vivamus vel magna efficitur, rutrum quam vel, malesuada dolor. </p>
+			<section class="col-12 centeredText" id="callout">
 
-			</div>
+				<h3>Welcome the the largest collection of street art on the net -</h3>
+				<q class="">-Sheaaa Riight</q>
 
-			<div class="col-6 stag-cont">
+			</section>
+			<aside class="col-6 stag-cont">
 
-				<img src="images/paint.jpg">
+				<h4>Supplies</h4>
+				<p class='centeredText'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et risus volutpat lectus volutpat viverra. Duis ante sem, malesuada vitae felis vestibulum, accumsan luctus eros. Proin quis tristique nisl, id auctor nisi. Integer mattis arcu a ipsum fermentum condimentum. </p>
 
-			</div>
+				<button class="btn btnDefualt">Shop</button>
+
+			</aside>
+
+			<aside class="col-6 stag-cont">
+
+				<img src="images/paint.jpg" alt="paint"/>
+
+			</aside>
 
 
 		</div>
+		<!-- second row -->
 		<div class="row">
 
-			<div class="col-6 stag-cont">
+			<aside class="col-6 stag-cont">
 
-				<img src="images/bus.jpg">
+				<img src="images/sailor.jpg" alt="sailor"/>
 
-			</div>
-			<div class="col-6 stag-cont">
-				<h2>About</h2>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et risus volutpat lectus volutpat viverra. Duis ante sem, malesuada vitae felis vestibulum, accumsan luctus eros. Proin quis tristique nisl, id auctor nisi. Integer mattis arcu a ipsum fermentum condimentum. Etiam volutpat eget odio sed maximus. Vivamus a mi at quam vulputate interdum id sed velit. Donec ut mauris id diam fermentum malesuada. Vivamus vel magna efficitur, rutrum quam vel, malesuada dolor. </p>
-			</div>
+			</aside>
+			<aside class="col-6 stag-cont">
+				<h4>About</h4>
+				<p class='centeredText'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et risus volutpat lectus volutpat viverra. Duis ante sem, malesuada vitae felis vestibulum, accumsan luctus eros. Proin quis tristique nisl, id auctor nisi. Integer mattis arcu a ipsum fermentum condimentum. </p>
+
+				<button class="btn btnDefualt"> About us</button>
+			</aside>
 
 		</div>
 
 	</div>
-
-	<div class="container">
-
-		<div class="row">
-			<q>Photos from our gallery</q>
-			<br/>
-			<section class="col-4"><figure><img src="images/beard.jpg"></figure></section>
-			<section class="col-4"><figure><img src="images/face.jpg"></figure></section>
-			<section class="col-4"><figure><img src="images/tunnel.jpg"></figure></section>
-
-
-		</div>
-
-	</div>
-
+	<!-- Footer Section -->
 	<footer>
-	
 
-		<aside>
-			<h3>How to sign up?</h3>
-			<strong>follow these steps</strong>
-			<ol>
-				<li>Submit your email</li>
-				<li>Confirm your account</li>
-				<li>and presto</li>
-			</ol>
-		</aside>
+		<div class="container">
+
+			<div class="row">
+				<h4>Photos from our gallery</h4>
+				<br/>
+				<section class="col-3"><a href="images/beard.jpg"><figure ><img src="images/beard.jpg" alt="beard"></figure></a></section>
+				<section class="col-3"><a href="images/face.jpg"><figure ><img src="images/face.jpg" alt="face"></figure></a></section>
+				<section class="col-3"><a href="images/tunnel.jpg"><figure ><img src="images/tunnel.jpg" alt="tunnel"></figure></a></section>
+
+
+			</div>
+
+		</div>
 
 	</footer>
 </body>
