@@ -9,12 +9,12 @@ h1,h2,h3,h4{
 	color:#A0A0A0;
 	font-family: 'Oswald', sans-serif;
 }
-h1{font-size: 32px;letter-spacing: 1px;	}
-h2{font-size: 24px;letter-spacing: 1px;	}
-h3{font-size: 22px;letter-spacing: 1px;	}
-h4{font-size: 18px;letter-spacing: 1px;	}
+h1{font-size: 2em;letter-spacing: 1px;	}
+h2{font-size: 1.5em;letter-spacing: 1px;	}
+h3{font-size: 1.375em;letter-spacing: 1px;	}
+h4{font-size: 1.125em;letter-spacing: 1px;	}
 /*Basic fonts*/
-p{font-size: 12px; letter-spacing: 1px;}
+p{font-size: .75em; letter-spacing: 1px;}
 /*Navigation*/
 header{
 	width:100%;
@@ -76,11 +76,8 @@ img{
 	clear:both;
 }
 .container{
-
 	width: 100%;
-	max-width: 960px;
 	margin: 0 auto;
-
 }
 .centered{
 	margin: 0 auto;
@@ -89,26 +86,17 @@ img{
 .centeredText{
 	text-align: center;
 }
-
-
-
 /*Grid in progress*/
-.row{
-	width: 100%;
-
-}
 
 .col-3{
-	width:33%;
-	display: inline-block;
+	width:33.1%;
+	margin-left: .05%;
+	float:left;
 }
 
 .col-4{
-
 	width:25%;
-	display: inline-block;
-
-
+	float:left;
 }
 .col-6{
 	width:50%;
@@ -116,18 +104,15 @@ img{
 
 }
 .col-12{
-
 	width:100%;
-	display: inline-block;
-
+	float:left;
 }
 
 .hero{
 	width: 100%;
-	height:400px;
+	height:480px;
 	overflow:hidden;
-	margin: 0px 0px 100px 0px;
-
+	margin: 0px 0px 0px 0px;
 }
 
 
@@ -136,14 +121,11 @@ img{
 .slide{
 	width: 100%;
 	height:100%;
+	position: relative;
+	background:  url(../images/tunnel.jpg);
 	background-size: cover;
-	position: relative;
-}
-.slide img{
-	width: 100%;
-	z-index: 1;
-	position: relative;
-	margin-top: -150px;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .slide .container{
 	height: 100%;
@@ -155,7 +137,22 @@ img{
 /*Callouts*/
 #callout{
 	margin: 0px 0px 100px 0px;
-
+	padding: 200px 0px;
+	background-size:cover;
+	background: url(../images/seven-seas.jpg);
+	background-size: 30% 100%;
+    background-repeat: repeat-x;
+    background-position: left;
+    width: 100%;
+    color:#ffffff;
+}
+#callout h3{
+    color:#ffffff;
+}
+#callout q{
+	font-style:italic;
+	opacity: .8;
+	font-weight: 900;
 }
 #mainContent{
 	margin-bottom: 100px;
@@ -164,7 +161,7 @@ img{
 /*Buttons*/
 .btn{
 	padding: 10px 15px;
-	border-radius: 5px	;
+	border-radius: 5px;
 	border: none;
 	margin: 30px; 
 
@@ -181,12 +178,10 @@ img{
 }
 /*Stagged Containers*/
 .stag-cont{
-	height:324px;
+	height:404px;
 	overflow: hidden;
-	
 }
 .stag-cont h4{
-	
 	padding: 10px 30px;
 	margin: 0px 0px;
 }
@@ -197,16 +192,27 @@ img{
 	margin: 0px 0px;	
 }
 
-
+#gallery{
+	padding:20px;
+}
 .thumb{
-	width: 100%;
-
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C */	
+	min-height: 250px;
+	border: solid thin #f0f0f0;
+	border-radius: 10px;
+	padding:20px;
 }
 .thumb:hover{
 	box-shadow: 0px 2px 2px #232323;
 	
 }
-
 footer{
-	margin:50px 0px;
+	height: 300px;
+	margin:0px 0px;
 }

@@ -1,134 +1,92 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+	<head>
+	  <meta charset="utf-8">
 
-  <title>Graf Nation</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+	  <title>Graf Nation</title>
+	  <meta name="description" content="The HTML5 Herald">
+	  <meta name="author" content="SitePoint">
 
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'><!-- Import font -->
-  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'><!-- Import font-->
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-</head>
+	  <link rel="stylesheet" href="css/main.css" type="text/css">
+	  <link rel="stylesheet" href="css/normalize.css" type="text/css">
+	  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'><!-- Import font -->
+	  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'><!-- Import font-->
+	  <!--[if lt IE 9]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	  <![endif]-->
+	</head>
+	<body>
+	 	<!-- For all of the header content -->
+		<header>
 
-<body>
-
-<!-- for something to be added later 
-<div class="aboveNav">
-	<div class="container">
-
-	</div>
-</div> -->
- 	
- 	<!-- For all of the header content -->
-	<header>
-
-		<div class="container">
-			
-			<h2 class="title">graf nation</h2>
-			
-			<nav>
-
-				<ul>
-					<li><a href="#">Gallery</a></li>
-					<li><a href="#">Gallery</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Shop</a></li>
-
-				</ul>
-
-			</nav>
-
-		</div>
-
-	</header>
-
-
-	<!-- large image at top of page : will contain slider  -->
-	<div class="hero">
-
-		<div class="slider">
-
-			<div class="slide">
-				<img src="images/tunnel.jpg" alt="tunnel"/>
+			<div class="container">
+				<h2 class="title">graf nation</h2>
+				<nav>
+					<ul>
+						<li><a href="#home">home</a></li>
+						<li><a href="#gallery">Gallery</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#shop">Shop</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- large image at top of page : will contain slider  -->
+		<div class="hero" id="home">
+			<div class="slider">
+				<div class="slide">
+					
+				</div>
 			</div>
 		</div>
-
-	</div>
-
-
-	<!-- main page content -->
-	<div class="container" id="mainContent">
-
-		<!-- 1st row -->
-		<div class="row">
-
-			<section class="col-12 centeredText" id="callout">
-
-				<h3>Welcome the the largest collection of street art on the net -</h3>
-				<q class="">-Sheaaa Riight</q>
-
-			</section>
+		<!-- main page content -->
+		<div class="container" id="mainContent">
+			<!-- row 1 -->
 			<aside class="col-6 stag-cont">
-
-				<h4>Supplies</h4>
+				<section>
+					<h4 id="shop">Supplies</h4>
+				</section>
 				<p class='centeredText'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et risus volutpat lectus volutpat viverra. Duis ante sem, malesuada vitae felis vestibulum, accumsan luctus eros. Proin quis tristique nisl, id auctor nisi. Integer mattis arcu a ipsum fermentum condimentum. </p>
-
 				<button class="btn btnDefualt">Shop</button>
-
 			</aside>
-
 			<aside class="col-6 stag-cont">
-
 				<img src="images/paint.jpg" alt="paint"/>
-
 			</aside>
-
-
-		</div>
-		<!-- second row -->
-		<div class="row">
-
+			<!-- row 2 -->
 			<aside class="col-6 stag-cont">
-
-				<img src="images/sailor.jpg" alt="sailor"/>
-
+				<img src="images/sailor.jpg" alt="sailor"/>	
 			</aside>
 			<aside class="col-6 stag-cont">
-				<h4>About</h4>
+				<section>
+					<h4 id="about">About</h4>
+				</section>
 				<p class='centeredText'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et risus volutpat lectus volutpat viverra. Duis ante sem, malesuada vitae felis vestibulum, accumsan luctus eros. Proin quis tristique nisl, id auctor nisi. Integer mattis arcu a ipsum fermentum condimentum. </p>
 
 				<button class="btn btnDefualt"> About us</button>
 			</aside>
-
+			<section class="col-12 centeredText" id="callout">
+				<h3>Welcome the the largest collection of street art on the net -</h3>
+				<q>-Sheaaa Riight</q>
+			</section>
 		</div>
+		<!-- Footer Section -->
+		<div class="clear"></div>
+		<footer>
 
-	</div>
-	<!-- Footer Section -->
-	<footer>
-
-		<div class="container">
-
-			<div class="row">
-				<h4>Photos from our gallery</h4>
+			<div class="container">
+				
+				<section class="centeredText">
+					<h4 id="gallery">Photos from our gallery</h4>
+				</section>
 				<br/>
-				<section class="col-3"><a href="images/beard.jpg"><figure ><img src="images/beard.jpg" alt="beard"></figure></a></section>
-				<section class="col-3"><a href="images/face.jpg"><figure ><img src="images/face.jpg" alt="face"></figure></a></section>
-				<section class="col-3"><a href="images/tunnel.jpg"><figure ><img src="images/tunnel.jpg" alt="tunnel"></figure></a></section>
-
-
+				<section class="repeating-bg">
+				<section class="col-3" ><a href="images/beard.jpg"><figure class="thumb"><img src="images/beard.jpg" alt="beard"><figcaption>beadered guy</figcaption></figure></a></section>
+				<section class="col-3" ><a href="images/face.jpg"><figure class="thumb"><img src="images/face.jpg" alt="face"><figcaption>graf of a face</figcaption></figure></a></section>
+				<section class="col-3" ><a href="images/tunnel.jpg"><figure class="thumb" ><img src="images/tunnel.jpg" alt="tunnel"><figcaption>guy standing in tunnel</figcaption></figure></a></section>
+				</section>
 			</div>
-
-		</div>
-
-	</footer>
-</body>
+		</footer>
+	</body>
 </html>
 
