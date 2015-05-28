@@ -43,13 +43,12 @@
 		<!-- main page content -->
 		<div class="container" id="mainContent">
 			<!-- row 1 -->
-			<aside class="col-6 stag-cont">
-				<section>
+			<article class="col-6 stag-cont">
 					<h4 id="shop">Supplies</h4>
-				</section>
+
 				<p class='centeredText'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et risus volutpat lectus volutpat viverra. Duis ante sem, malesuada vitae felis vestibulum, accumsan luctus eros. Proin quis tristique nisl, id auctor nisi. Integer mattis arcu a ipsum fermentum condimentum. </p>
 				<button class="btn btnDefualt">Shop</button>
-			</aside>
+			</article>
 			<aside class="col-6 stag-cont">
 				<img src="images/paint.jpg" alt="paint"/>
 			</aside>
@@ -57,34 +56,59 @@
 			<aside class="col-6 stag-cont">
 				<img src="images/sailor.jpg" alt="sailor"/>	
 			</aside>
-			<aside class="col-6 stag-cont">
-				<section>
+			<article class="col-6 stag-cont">
 					<h4 id="about">About</h4>
-				</section>
+
 				<p class='centeredText'> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et risus volutpat lectus volutpat viverra. Duis ante sem, malesuada vitae felis vestibulum, accumsan luctus eros. Proin quis tristique nisl, id auctor nisi. Integer mattis arcu a ipsum fermentum condimentum. </p>
 
 				<button class="btn btnDefualt"> About us</button>
-			</aside>
+			</article>
 			<section class="col-12 centeredText" id="callout">
 				<h3>Welcome the the largest collection of street art on the net -</h3>
 				<q>-Sheaaa Riight</q>
+			</section>
+
+			<section class="col-12 " id="contact">
+
+				<section class="centeredText"><h2>Contact Us</h2></section>
+				<form>
+
+					<label>First Name</label>
+					<input type="text">
+					<label>Last Name</label>
+					<input type="text">
+					<label>Email</label>
+					<input type="text">
+					<label>Reason for Contacting</label>
+					<select>
+						<option>Select One</option>
+						<option>Just saying "what's up</option>
+						<option>Technical Issue with the site</option>
+						<option>I've got a bone to pick with you</option>
+					</select>
+					<label class="messageLabel">Message</label>
+					<textarea placeholder="Write your message here"></textarea>
+					<label class="radio-label">subscribe me to GrafNation's News Letter</label>
+					<input type="checkbox" checked>
+					<br/>
+					<button>Submit</button>
+				</form>
 			</section>
 		</div>
 		<!-- Footer Section -->
 		<div class="clear"></div>
 		<footer>
-
 			<div class="container">
-				
-				<section class="centeredText">
-					<h4 id="gallery">Photos from our gallery</h4>
-				</section>
-				<br/>
-				<section class="repeating-bg">
-				<section class="col-3" ><a href="images/beard.jpg"><figure class="thumb"><img src="images/beard.jpg" alt="beard"><figcaption>beadered guy</figcaption></figure></a></section>
-				<section class="col-3" ><a href="images/face.jpg"><figure class="thumb"><img src="images/face.jpg" alt="face"><figcaption>graf of a face</figcaption></figure></a></section>
-				<section class="col-3" ><a href="images/tunnel.jpg"><figure class="thumb" ><img src="images/tunnel.jpg" alt="tunnel"><figcaption>guy standing in tunnel</figcaption></figure></a></section>
-				</section>
+				<table>
+					<tr>
+						<th scope="col">Photos from our gallery</th>
+					</tr>
+					<tr>
+						<td><a href="images/beard.jpg"><figure><img src="images/beard.jpg" alt="beard"><figcaption>beadered guy</figcaption></figure></a></td>
+						<td><a href="images/face.jpg"><figure><img src="images/face.jpg" alt="face"><figcaption>graf of a face</figcaption></figure></a></td>
+						<td><a href="images/tunnel.jpg"><figure ><img src="images/tunnel.jpg" alt="tunnel"><figcaption>guy standing in tunnel</figcaption></figure></a></td>
+					</tr>
+				</table>
 			</div>
 		</footer>
 	</body>
